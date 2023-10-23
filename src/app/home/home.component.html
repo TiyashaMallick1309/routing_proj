@@ -1,1 +1,5 @@
 <p>home works!</p>
+<ul>
+    <li *ngFor="let user of userData">{{user.name}}</li>
+</ul>
+<button (click)="addUser({name:"Person 3", id: 3})">Add</button>
