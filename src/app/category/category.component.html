@@ -1,0 +1,6 @@
+<ul>
+    <li *ngFor="let blog of blogList">
+        <a routerLink="article/{{blog.id}}">{{blog.title}}</a>
+    </li>
+</ul>
+<router-outlet></router-outlet>

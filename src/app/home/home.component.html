@@ -1,5 +1,66 @@
 <p>home works!</p>
-<ul>
-    <li *ngFor="let user of userData">{{user.name}}</li>
-</ul>
-<button (click)="addUser({name:"Person 3", id: 3})">Add</button>
+<!-- <ul>
+    <li *ngFor="let blog of blogService.blogs">
+        <a routerLink="/blog/{{blog.id}}">{{blog.title}}</a>
+    </li>
+</ul> -->
+<!-- <button (click)="addUser({ name: 'Person 3', id: 3})">Add</button> -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Foreign</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a routerLink="/blog/foreign" class="btn btn-primary">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Political</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a routerLink="/blog/political" class="btn btn-primary">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Luxury </h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a routerLink="/blog/luxury" class="btn btn-primary">View</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Poetry</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a routerLink="/blog/poetry" class="btn btn-primary">View</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">People</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a routerLink="/blog/people" class="btn btn-primary">View</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Filmy</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a routerLink="/blog/filmy" class="btn btn-primary">View</a>
+              </div>
+            </div>
+          </div>
+      </div>
+</div>
