@@ -8,7 +8,7 @@ blogs=[
   {
     id: 1,
     title:"Israel War",
-    category: 'foreign'
+    category: "foreign"
   },
   {
     id: 2,

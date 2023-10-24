@@ -5,6 +5,7 @@ import { AboutComponent } from './about/about.component';
 import { PriceComponent } from './price/price.component';
 import { BlogComponent } from './blog/blog.component';
 import { CategoryComponent } from './category/category.component';
+import { ArticlesComponent } from './articles/articles.component';
 
 const routes: Routes = [
   {
@@ -20,12 +21,16 @@ const routes: Routes = [
     component: PriceComponent
   },
   {
-    path: "blog/:categoryId",
+    path: "category",
     component: CategoryComponent,
     children:[
       {
         path:"article/:blogId",
         component:BlogComponent
+      },
+      {
+        path: ":categoryId",
+        component: ArticlesComponent
       }
     ]
   }

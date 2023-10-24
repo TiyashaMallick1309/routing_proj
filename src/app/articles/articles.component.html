@@ -1,0 +1,5 @@
+<ul>
+    <li *ngFor="let blog of blogList">
+        <a routerLink="/category/article/{{blog.id}}">{{blog.title}}</a>
+    </li>
+</ul>

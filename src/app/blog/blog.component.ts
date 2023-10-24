@@ -29,7 +29,7 @@ export class BlogComponent {
 
         this.activeRoute.params.subscribe((params)=>{
             let blogIndex=this.blogService.blogs.findIndex(
-                (b)=>b.id==params['id']
+                (b)=>b.id==params['blogId']
             );
             this.currentBlog=this.blogService.blogs[blogIndex];
         });

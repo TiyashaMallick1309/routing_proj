@@ -12,7 +12,8 @@ import { Blog } from '../blog/blog.component';
 export class CategoryComponent {
   blogList: Array<Blog>|undefined;
 constructor(private activatedRoute:ActivatedRoute, private blogService: BlogService){
-  let category=this.activatedRoute.snapshot.params['categoryId'];
-  this.blogList = this.blogService.blogs.filter(b=>b.category==category);
+this.activatedRoute.params.subscribe((params)=>{
+  this.blogList = this.blogService.blogs.filter(b=>b.category==params['categoryId']);
+});
 }
 }
